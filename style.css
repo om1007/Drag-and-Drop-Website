@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  padding: 15px;
+  background: #5BC0BE;
+  color: white;
+  margin: 0;
+  border-radius:28px;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.sidebar, .properties-panel {
+  width: 200px;
+  padding: 15px;
+  background: #f4f4f4;
+  overflow-y: auto;
+  border-radius:28px;
+}
+
+.sidebar h2, .properties-panel h2 {
+  margin-top: 0;
+  border-radius:28px;
+}
+
+.element {
+  
+  background: #b0f0e5;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: grab;
+  text-align: center;
+  border-radius:28px;
+}
+
+.canvas {
+  flex: 1;
+  border: 2px dashed #ccc;
+  margin: 15px;
+  position: relative;
+  background: #fff;
+  overflow: auto;
+  padding: 10px;
+  border-radius:28px;
+}
+
+.placeholder {
+  text-align: center;
+  color: #aaa;
+  border-radius:28px;
+}
+
+.canvas * {
+  margin: 10px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #28a745; 
+  color: white;
+  padding: 12px 24px;        
+  font-size: 16px;           
+  border: none;
+  border-radius: 25px;        
+  cursor: pointer;
+  
+}
+
+button[type="button"]:hover {
+  background-color: #218838; 
+}

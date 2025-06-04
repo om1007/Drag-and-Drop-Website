@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag & Drop Website Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1 class="page-title">Drag & Drop Website Builder</h1>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>Elements</h2>
+      <div class="element" draggable="true" data-type="text">Text</div>
+      <div class="element" draggable="true" data-type="image">Image</div>
+      <div class="element" draggable="true" data-type="button">Button</div>
+    </div>
+
+    <div class="canvas" id="canvas">
+      <p class="placeholder">Drag elements here</p>
+    </div>
+
+    <div class="properties-panel">
+      <h2>Edit Properties</h2>
+      <form id="propertiesForm">
+        <label>Text:</label>
+        <input type="text" name="text" /><br><br>
+        <label>Font Size (px):</label><br>
+        <input type="number" name="fontSize" min="10" max="100" /><br><br>
+        <label>Color:</label>
+        <input type="color" name="color" /><br><br>
+        <label>Image URL:</label>
+        <input type="text" name="src" /><br><br>
+        <button type="button" onclick="applyProperties()">Apply</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
